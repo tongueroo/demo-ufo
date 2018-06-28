@@ -4,8 +4,8 @@ This project contains a small sinatra app that prints out some text.  It listens
 
 ## Testing Locally with Mac OSX
 
-    $ git clone https://github.com/tongueroo/sinatra
-    $ cd sinatra
+    $ git clone https://github.com/tongueroo/demo-ufo
+    $ cd demo-ufo
     $ bundle
     $ ruby hi.rb
 
@@ -13,13 +13,13 @@ This project contains a small sinatra app that prints out some text.  It listens
 
 The app is also dockerized so you can test this via docker.
 
-    $ docker build -t tongueroo/sinatra . # you can skip this step if you want to just pull the image from DockerHub.
-    $ docker run --rm -d -p 4567:4567 --name hi tongueroo/sinatra
+    $ docker build -t tongueroo/demo-ufo . # you can skip this step if you want to just pull the image from DockerHub.
+    $ docker run --rm -d -p 4567:4567 --name demo tongueroo/demo-ufo
     $ curl localhost:4567 ; echo
     42
-    $ docker stop hi ; docker rm hi
+    $ docker stop demo ; docker rm demo
     hi
     hi
     $
 
-This demo project is use to demostrate ufo: http://ufoships.com/quick-start/
+This demo project is use to demonstrate ufo. More info here: http://ufoships.com/quick-start/
