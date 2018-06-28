@@ -10,4 +10,5 @@ RUN bundle install --system
 
 EXPOSE 4567
 
-CMD ["ruby", "hi.rb"]
+# If you do not have a bin/web wrapper file, create one or update this command
+CMD ["bin/web"]

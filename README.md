@@ -22,7 +22,4 @@ The app is also dockerized so you can test this via docker.
     hi
     $
 
-This demo project was used in these blog posts:
-
-* [Gentle Introduction to How AWS ECS Works with Example Tutorial](https://blog.boltops.com/2017/09/09/a-gentle-introduction-to-aws-ecs-with-example-tutorial)
-* [AWS Elastic Beanstalk: Under the Hood](https://blog.boltops.com/2017/07/19/under-the-hood-of-aws-elastic-beanstalk-part-1)
+This demo project is use to demostrate ufo: http://ufoships.com/quick-start/
