@@ -1,0 +1,5 @@
+#!/bin/bash
+
+uptime
+free -m
+cat /proc/cpuinfo
