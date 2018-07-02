@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby hi.rb
+exec ruby hi.rb
