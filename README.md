@@ -1,5 +1,7 @@
 # Test Project for Demo
 
+[![BoltOps Badge](https://img.boltops.com/boltops/badges/boltops-badge.png)](https://www.boltops.com)
+
 This project contains a small sinatra app that prints out some text.  It listens on the default 4567 port.
 
 ## Testing Locally with Mac OSX
