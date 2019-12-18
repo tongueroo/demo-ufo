@@ -12,5 +12,5 @@ post '/' do
   # data = JSON.parse(request.body.read.to_s)
   # puts "data:"
   # pp data
-  "42\n"
+  "42 post\n"
 end
