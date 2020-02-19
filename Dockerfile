@@ -1,4 +1,4 @@
-FROM ruby:2.5.1
+FROM ruby:2.6.5
 
 WORKDIR /app
 ADD Gemfile /app/Gemfile
