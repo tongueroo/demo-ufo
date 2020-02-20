@@ -1,0 +1,3 @@
+#!/bin/bash
+
+backend-admin deploy demo-web-development-Ecs-179L598PRC44

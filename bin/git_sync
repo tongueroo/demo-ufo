@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SHA=$1
+
+set -eux
+
+git fetch origin
+git checkout $SHA
+# other setup
