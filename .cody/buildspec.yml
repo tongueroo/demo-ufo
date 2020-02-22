@@ -9,3 +9,5 @@ phases:
   build:
     commands:
       - uptime
+      - .cody/scripts/ssm.sh
+      - echo done
