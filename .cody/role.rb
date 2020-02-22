@@ -1,1 +1,1 @@
-iam_policy("logs", "ssm")
+iam_policy("logs", "ssm", "ec2")
