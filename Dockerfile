@@ -1,4 +1,4 @@
-FROM ruby:2.5.1
+FROM ruby:2.7.0
 
 WORKDIR /app
 ADD Gemfile /app/Gemfile
@@ -6,7 +6,9 @@ ADD Gemfile.lock /app/Gemfile.lock
 RUN bundle install --system
 
 ADD . /app
-RUN bundle install --system
+# [DEPRECATED] The `--system` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set system 'true'`, and stop using this flag
+RUN bundle config set system 'true'
+RUN bundle install
 
 EXPOSE 8080
 
