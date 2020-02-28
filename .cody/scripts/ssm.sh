@@ -13,4 +13,4 @@ tar -czf /tmp/code.tgz -C $CODEBUILD_SRC_DIR .
 set -x
 aws s3 cp /tmp/code.tgz $S3_PATH/code.tgz
 
-sonic execute --tags Name=backend-admin-box /opt/scripts/solo-deploy-ci.sh $ECS_SERVICE $DOCKER_CONTAINER $S3_PATH
+sonic execute --tags Name=backend-admin-box /usr/local/bin/ecs-deploy-ci $ECS_SERVICE $DOCKER_CONTAINER $S3_PATH
