@@ -9,9 +9,11 @@ gem install sonic-screwdriver --no-document
 rbenv rehash
 
 cd ..
-tar -czf code.tar -C $CODEBUILD_SRC_DIR .
+tar -czf code.tgz -C $CODEBUILD_SRC_DIR .
 cd -
+
+find / -name code.tgz
 
 ls
 
-sonic execute --tags Name=backend-admin-box /opt/scripts/solo-ci.sh $ECS_SERVICE $DOCKER_CONTAINER $S3_PATH
+# sonic execute --tags Name=backend-admin-box /opt/scripts/solo-ci.sh $ECS_SERVICE $DOCKER_CONTAINER $S3_PATH
