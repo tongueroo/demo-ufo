@@ -8,11 +8,8 @@ S3_PATH=$3
 gem install sonic-screwdriver --no-document
 rbenv rehash
 
-cd ..
+# Copy code to s3 for later download
 tar -czf /tmp/code.tgz -C $CODEBUILD_SRC_DIR .
-cd -
-pwd
-
 set -x
 aws s3 cp /tmp/code.tgz $S3_PATH/code.tgz
 
