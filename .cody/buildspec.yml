@@ -9,5 +9,5 @@ phases:
   build:
     commands:
       - uptime
-      - .cody/scripts/ssm.sh
+      - .cody/scripts/ssm.sh $ECS_SERVICE $DOCKER_CONTAINER
       - echo done
