@@ -1,7 +1,8 @@
 #!/bin/bash
 
+ECS_SERVICE=$1
+DOCKER_CONTAINER=$2
+
 gem install sonic-screwdriver --no-document
 rbenv rehash
-# sonic execute --tags Name=backend-admin file://.cody/scripts/solo.sh
-sonic execute --tags Name=backend-admin /opt/scripts/solo-ci.sh
-
+sonic execute --tags Name=backend-admin-box /opt/scripts/solo-ci.sh $ECS_SERVICE $DOCKER_CONTAINER
