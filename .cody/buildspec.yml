@@ -8,6 +8,4 @@ phases:
       ruby: 2.6
   build:
     commands:
-      - uptime
-      - .cody/scripts/ssm.sh $ECS_SERVICE $DOCKER_CONTAINER
-      - echo done
+      - .cody/scripts/ssm.sh $ECS_SERVICE $DOCKER_CONTAINER $S3_PATH
