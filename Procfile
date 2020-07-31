@@ -1,1 +1,1 @@
-web: PORT=$PORT ruby hi.rb
+web: PORT=$PORT ruby app.rb

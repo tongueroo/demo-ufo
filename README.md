@@ -9,7 +9,7 @@ This project contains a small sinatra app that prints out some text.  It listens
     $ git clone https://github.com/tongueroo/demo-ufo
     $ cd demo-ufo
     $ bundle
-    $ ruby hi.rb
+    $ ruby app.rb
 
 ## Testing Locally with Docker
 
@@ -20,7 +20,7 @@ The app is also dockerized so you can test this via docker.
     $ curl localhost:8080
     42
     $ docker stop demo
-    hi
+    app
     $
 
 This demo project is use to demonstrate ufo. More info here: http://ufoships.com/quick-start/
