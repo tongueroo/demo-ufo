@@ -1,16 +1,16 @@
-# The manifest for the "web" service.
+# The manifest for the "app" service.
 # Read the full specification for the "Load Balanced Web Service" type at:
 #  https://aws.github.io/copilot-cli/docs/manifest/lb-web-service/
 
 # Your service name will be used in naming your resources like log groups, ECS services, etc.
-name: web
+name: app
 type: Load Balanced Web Service
 
 # Distribute traffic to your service.
 http:
   # Requests to this path will be forwarded to your service.
   # To match all requests you can use the "/" path.
-  path: '/'
+  path: 'app'
   # You can specify a custom health check path. The default is "/".
   # healthcheck: '/'
 
@@ -33,16 +33,8 @@ exec: true     # Enable running commands in your container.
 
 #secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
 #  GITHUB_TOKEN: GITHUB_TOKEN  # The key is the name of the environment variable, the value is the name of the SSM parameter.
-environments:
-  test:
-    secrets:
-      DB_HOST: /copilot/hello/test/secrets/DB_HOST
 
 # You can override any of the values defined above by environment.
 #environments:
 #  test:
 #    count: 2               # Number of tasks to run for the "test" environment.
-
-# network:
-#   vpc:
-#     placement: 'private'
