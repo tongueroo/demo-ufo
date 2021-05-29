@@ -39,9 +39,9 @@ environments:
       DB_HOST: /copilot/hello/test/secrets/DB_HOST
 
 # You can override any of the values defined above by environment.
-#environments:
-#  test:
-#    count: 2               # Number of tasks to run for the "test" environment.
+environments:
+  prod:
+    count: 2               # Number of tasks to run for the "test" environment.
 
 # network:
 #   vpc:
